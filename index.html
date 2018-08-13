@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style type="text/css">
+ * {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:13px;
+}
+#canvas{
+	margin-left: -30px;
+	float: left;
+}
+.PolygonShape h3 {
+    color: #0065aa;
+    margin-bottom: 5px;
+}
+.vision-clr {
+    background: #F8F9FB;
+    border-color: #DDDEE0;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.circleHexa {
+    position: relative;
+	float: left;
+	width: 100%;
+	height: 260px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.circle-lg {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.vision-clr .PolygonShape{
+    border-color: #DDDEE0;
+    font-size: 14px;
+    color: #474f57;
+    height: 205px;
+    width: 205px;
+    text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 100%;
+    background: none;
+}
+.mission-clr {
+    background: #F8F9FB;
+    border-color: #DDDEE0;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-align: center;
+}
+.mission-clr .PolygonShape {
+    border-color: #DDDEE0;
+    font-size: 14px;
+    color: #474f57;
+    height: 205px;
+    width: 205px;
+    text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 100%;
+    background: none;
+}
+.PolygonShape h3 {
+    color: #0065aa;
+    margin-bottom: 5px;
+	font-weight: 500;
+    line-height: 1.2;
+	font-size: 22px;
+    margin-top: 15%;
+	font-weight: 600;
+}
+.text-center {
+    text-align: center !important;
+}
+.vision-clr .PolygonShape, .mission-clr .PolygonShape {
+    font-size: 14px;
+    color: #474f57;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+	padding: 20px;
+}
+.list{
+    position: absolute;
+    left: 40%;
+    top: 0px;
+	line-height: 1.8em;
+	text-align: center;
+}
+.list h2{
+	width: 100%;
+	font-size: 30px;
+	margin-bottom: 15px;
+	color: #0065aa;
+}
+	 .list li{
+		 list-style: none;
+		 font-weight: 600;
+	 }
+</style>
+</head>
+
+<body>
+<div class="row circleHexa pt-5 pb-5">
+        <div class="circle-lg vision-clr">
+          <div class="PolygonShape polyPosition8 d-flex align-items-center justify-content-center">
+            <div class="polygonContent">
+              <h3 class="text-center">Vision</h3>
+              <p>Assages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+            </div>
+          </div>
+        </div>
+        
+<div class="list">
+	<h2 class="text-center">Goals</h2>
+	<li>Improve Business Performance</li>
+	<li>Improve Business Operations</li>
+    <li>Improve Business Profitability</li>
+    <li>Efficiency</li>
+    <li>Improve Risk Management</li>
+    <li>Grow Revenue</li>
+    <li>Helping Employees Achieve a Better Lifestyle</li>
+    <li>Helping Employees Pay for Education</li>
+</div>
+        
+        <div class="circle-lg mission-clr">
+          <div class="PolygonShape polyPosition8 d-flex align-items-center justify-content-center">
+            <div class="polygonContent">
+              <h3 class="text-center">Mission</h3>
+              <p>Assages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+            </div>
+          </div>
+        </div>
+	</div>
+        <div class="clearfix"></div>
+        
+
+       
+<div id="canvas"></div>
+
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script type="text/javascript" src="libs/d3.v2.min.js"></script>
+<script type="text/javascript" src="data.service.js"></script>
+<script type="text/javascript" src="chart-data.model.js"></script>
+<script type="text/javascript" src="chart.js"></script>
+</body>
+</html>
